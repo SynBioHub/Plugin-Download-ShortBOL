@@ -1,5 +1,5 @@
 # Plugin-Download-ShortBOL
-A very small test plugin to test the download interface is working for SynBioHub. Could be the basis for python based download plugins.
+A plugin to create shortBOL.
 
 # Install
 ## Using docker
