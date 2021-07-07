@@ -3,7 +3,7 @@ A very small test plugin to test the download interface is working for SynBioHub
 
 # Install
 ## Using docker
-Run `docker run --publish 8096:5000 --detach --name python-plug-shortbol synbiohub/plugin-download-ShortBOL:snapshot`
+Run `docker run --publish 8096:5000 --detach --name python-plug-shortbol synbiohub/plugin-download-shortbol:snapshot`
 Check it is up using localhost:8089.
 
 ## Using Python
