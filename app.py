@@ -50,9 +50,7 @@ def run():
     temp_dir = tempfile.TemporaryDirectory()
     data = request.get_json(force=True)
 
-    top_level_url = data['top_level']
     complete_sbol = data['complete_sbol']
-    instance_url = data['instanceUrl']
 
     #url = complete_sbol.replace('/sbol', '')
 
@@ -72,20 +70,10 @@ def run():
 
         result = result.replace("FILE_REPLACE", file_data)
 
-        #print("***************************************************")
-        #print(result)
-
         out_name = "Out.html"
         file_out_name = os.path.join(temp_dir.name, out_name)
         with open(file_out_name, 'w') as out_file:
             out_file.write(result)
-
-
-        #print("--------------------------------------------------")
-        #f = open(file_out_name, 'r')
-        #file_contents = f.read()
-        #print(file_contents)
-        #f.close()
 
         download_file_name = out_name
         ################## END SECTION ####################################
