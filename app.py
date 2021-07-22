@@ -1,6 +1,6 @@
 from flask import Flask, request, abort, send_from_directory, make_response
 import os, shutil, tempfile
-import sys
+# import sys
 
 # sys.path.insert(0, 'shortbol')
 import shortbol.SBOL2ShortBOL as SB2Short
