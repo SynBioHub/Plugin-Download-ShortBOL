@@ -12,6 +12,8 @@ COPY . .
 
 EXPOSE 5000
 
+RUN sudo apt install git
+
 RUN git clone https://github.com/intbio-ncl/shortbol
 
 RUN pip3 install -r requirements.txt
