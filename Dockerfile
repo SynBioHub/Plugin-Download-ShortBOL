@@ -4,15 +4,13 @@ RUN apk add --no-cache --update \
     python3 python3-dev gcc \
     gfortran musl-dev g++ \
     libffi-dev openssl-dev \
-    libxml2 libxml2-dev \
+    libxml2 libxml2-dev  git \
     libxslt libxslt-dev \
     libjpeg-turbo-dev zlib-dev
 
 COPY . .
 
 EXPOSE 5000
-
-RUN apt install git
 
 RUN git clone https://github.com/intbio-ncl/shortbol
 
