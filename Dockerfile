@@ -12,7 +12,7 @@ COPY . .
 
 EXPOSE 5000
 
-RUN git pull https://github.com/intbio-ncl/shortbol
+RUN git clone https://github.com/intbio-ncl/shortbol
 
 RUN pip3 install -r requirements.txt
 
