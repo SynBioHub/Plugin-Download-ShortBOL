@@ -12,7 +12,7 @@ COPY . .
 
 EXPOSE 5000
 
-RUN sudo apt install git
+RUN apt install git
 
 RUN git clone https://github.com/intbio-ncl/shortbol
 
